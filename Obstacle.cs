@@ -18,7 +18,7 @@ namespace Snake
             for (int i = 0; i < num; i++)
             {
                 int x = random.Next(Console.WindowHeight);
-                int y = random.Next(11, Console.WindowWidth - 11);
+                int y = random.Next(Console.WindowWidth);
                 obstacles.Add(new Position(x, y));
             }
 
@@ -27,7 +27,7 @@ namespace Snake
             {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.SetCursorPosition(obstacle.col, obstacle.row);
-                Console.Write("▒");
+                Console.Write("=");
             }
         }
 
