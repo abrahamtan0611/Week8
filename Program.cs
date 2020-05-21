@@ -272,8 +272,10 @@ namespace Snake
                     var x = userlist.getUsers;
                     userlist.recordUser();
                     userlist.sortRecord();
-                    Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2 - 11);
+                    Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2 - 12);
                     Console.WriteLine("High Score: ");
+                    Console.SetCursorPosition(Console.WindowWidth / 2 - 10, Console.WindowHeight / 2 - 11);
+                    Console.WriteLine("Time          Name    Score");
                     userlist.readRecord();
 
                     //Press enter to quit
